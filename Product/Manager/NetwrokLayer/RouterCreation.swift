@@ -14,7 +14,7 @@ enum Router {
   var scheme: String {
     switch self {
     case .getProducts:
-      return "https"
+      return "https://"
     }
   }
   
@@ -32,14 +32,6 @@ enum Router {
     }
   }
   
-  // 5.
-  var parameters: [URLQueryItem] {
-    switch self {
-    case .getProducts:
-      // 6.
-      return []
-    }
-  }
     var method: String {
             switch self {
             case .getProducts:
