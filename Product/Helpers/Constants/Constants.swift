@@ -9,7 +9,7 @@ import Foundation
 
 struct Constant {
     //base url
-    static let baseURL: String = "https://run.mocky.io/"
+    static let baseURL: String = "run.mocky.io/"
     // version
     static let varsionNumber: String = "v3/"
     //end points

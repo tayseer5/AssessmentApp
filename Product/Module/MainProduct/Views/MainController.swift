@@ -22,5 +22,19 @@ class MainController: UIViewController {
         super.viewDidLoad()
 
     }
+    @IBAction func test(_ sender: Any) {
+        callnetwrok()
+    }
+    func callnetwrok () {
+        NetworkServiceLayer.request(router: Router.getProducts) { (result: Result<[String: Product], Error>) in
+            switch result {
+            case .success(let response):
+                let products = response.values.map{$0}
+                print(products)
+            case .failure(let erroe):
+                print(result)
+            }
+        }
+    }
 
 }

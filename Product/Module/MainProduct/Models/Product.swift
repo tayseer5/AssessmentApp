@@ -7,7 +7,24 @@
 
 import Foundation
 
-struct Product: Decodable {
+struct ProductResponse : Codable{
+    var products: [String:Product]
+    
+}
+struct Product: Codable {
     var id: String
-    #warning("Complete this data structure")
+    var barcode: String
+    var productDescription: String
+    var imageUrl: String
+    var name: String
+    var retailPrice: Int
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case barcode
+        case productDescription = "description"
+        case imageUrl = "image_url"
+        case name
+        case retailPrice = "retail_price"
+    }
 }
