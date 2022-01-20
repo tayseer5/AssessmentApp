@@ -69,6 +69,10 @@ extension ProductListViewModel{
         }
         self.viewBindDelegate?.pushToView(viewController: basketView)
     }
+    func clearToChart () {
+        WARealmManager.shared.deleteAllDataBase()
+        
+    }
     func reloadData () {
         self.getProductListApi()
     }

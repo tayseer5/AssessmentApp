@@ -51,10 +51,19 @@ class WARealmManager: NSObject {
         }
     }
     
-    func deleteAllinTableArr(model : [Object]) {
+    func deleteAllinTableArr(models : [Object]) {
         do {
             try self.realm?.write {
-                realm?.delete(model)
+                realm?.delete(models)
+            }
+        }catch{
+            
+        }
+    }
+    func deleteAllDataBase() {
+        do {
+            try self.realm?.write {
+                realm?.deleteAll()
             }
         }catch{
             
