@@ -6,18 +6,20 @@
 //
 
 import Foundation
+import Realm
+import RealmSwift
 
 struct ProductResponse : Codable{
     var products: [String:Product]
     
 }
-struct Product: Codable {
-    var id: String
-    var barcode: String
-    var productDescription: String
-    var imageUrl: String
-    var name: String
-    var retailPrice: Int
+class Product: Object, Codable {
+    @Persisted(primaryKey: true) var id: String
+    @Persisted var barcode: String
+    @Persisted var productDescription: String
+    @Persisted var imageUrl: String
+    @Persisted var name: String
+    @Persisted var retailPrice: Int
     
     enum CodingKeys: String, CodingKey {
         case id

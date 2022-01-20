@@ -53,7 +53,7 @@ class ProductListViewController: UIViewController {
     private func prepareUI () {
         navigationController?.navigationBar.barTintColor = .black
         navigationController?.navigationBar.tintColor = .red
-        //self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "filterIcon.png"), style:.plain, target: self, action: #selector(switchList(_:)))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "heart"), style:.plain, target: self, action: #selector(moveToChart(_:)))
     }
     // MARK: Helping Function
     //this function from init view model and add callBack function logic from binding btween view and view model which will happend when api response come from webserice
@@ -74,6 +74,9 @@ class ProductListViewController: UIViewController {
         } else {
             noDataView.isHidden = false
         }
+    }
+    @objc func moveToChart(_ sender: AnyObject) {
+        productListViewModel?.moveToChart()
     }
     @objc func pullToRefresh(_ sender: AnyObject) {
         productListViewModel?.reloadData()
