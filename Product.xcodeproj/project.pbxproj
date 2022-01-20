@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B0D4DEF279956E3002D8B22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D4DEE279956E3002D8B22 /* ViewController.swift */; };
-		8B0D4DF4279956E6002D8B22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B0D4DF3279956E6002D8B22 /* Assets.xcassets */; };
 		8BACE87A2799578500BE317E /* NetworkServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BACE86B2799578400BE317E /* NetworkServiceMock.swift */; };
 		8BACE87B2799578500BE317E /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BACE86C2799578400BE317E /* DemoData.swift */; };
 		8BACE87D2799578500BE317E /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BACE86F2799578500BE317E /* MainController.swift */; };
@@ -24,8 +22,6 @@
 
 /* Begin PBXFileReference section */
 		8B0D4DE7279956E3002D8B22 /* Product.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Product.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B0D4DEE279956E3002D8B22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8B0D4DF3279956E6002D8B22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B0D4DF8279956E6002D8B22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BACE86B2799578400BE317E /* NetworkServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceMock.swift; sourceTree = "<group>"; };
 		8BACE86C2799578400BE317E /* DemoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
@@ -70,16 +66,15 @@
 		8B0D4DE9279956E3002D8B22 /* Product */ = {
 			isa = PBXGroup;
 			children = (
-				8BACE8912799593200BE317E /* Assets.xcassets */,
-				8BACE8732799578500BE317E /* AppDelegate */,
-				8BACE8652799578400BE317E /* Base.lproj */,
-				8BACE86A2799578400BE317E /* DemoData */,
-				8BACE8762799578500BE317E /* DetailController */,
-				8BACE86E2799578400BE317E /* MainController */,
-				8BACE8702799578500BE317E /* Models */,
-				8B0D4DEE279956E3002D8B22 /* ViewController.swift */,
-				8B0D4DF3279956E6002D8B22 /* Assets.xcassets */,
 				8B0D4DF8279956E6002D8B22 /* Info.plist */,
+				8BACE8A52799637E00BE317E /* Manager */,
+				8BACE89B2799620700BE317E /* Module */,
+				8BACE8732799578500BE317E /* Application */,
+				8BACE8652799578400BE317E /* Base.lproj */,
+				8BACE8A7279963A400BE317E /* Utilities */,
+				8BACE8AC279964AE00BE317E /* Helpers */,
+				8BACE8912799593200BE317E /* Assets.xcassets */,
+				8BACE88B2799586000BE317E /* LaunchScreen.storyboard */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -87,53 +82,140 @@
 		8BACE8652799578400BE317E /* Base.lproj */ = {
 			isa = PBXGroup;
 			children = (
-				8BACE88B2799586000BE317E /* LaunchScreen.storyboard */,
-				8BACE8892799585F00BE317E /* Main.storyboard */,
 			);
 			path = Base.lproj;
 			sourceTree = "<group>";
 		};
-		8BACE86A2799578400BE317E /* DemoData */ = {
-			isa = PBXGroup;
-			children = (
-				8BACE86B2799578400BE317E /* NetworkServiceMock.swift */,
-				8BACE86C2799578400BE317E /* DemoData.swift */,
-			);
-			path = DemoData;
-			sourceTree = "<group>";
-		};
-		8BACE86E2799578400BE317E /* MainController */ = {
-			isa = PBXGroup;
-			children = (
-				8BACE86F2799578500BE317E /* MainController.swift */,
-			);
-			path = MainController;
-			sourceTree = "<group>";
-		};
-		8BACE8702799578500BE317E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				8BACE8712799578500BE317E /* ShoppingBasket.swift */,
-				8BACE8722799578500BE317E /* Product.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		8BACE8732799578500BE317E /* AppDelegate */ = {
+		8BACE8732799578500BE317E /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				8BACE8742799578500BE317E /* AppDelegate.swift */,
 				8BACE8752799578500BE317E /* SceneDelegate.swift */,
 			);
-			path = AppDelegate;
+			path = Application;
 			sourceTree = "<group>";
 		};
-		8BACE8762799578500BE317E /* DetailController */ = {
+		8BACE89B2799620700BE317E /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				8BACE8A02799632800BE317E /* ShoppingBasket */,
+				8BACE89C2799623200BE317E /* MainProduct */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		8BACE89C2799623200BE317E /* MainProduct */ = {
+			isa = PBXGroup;
+			children = (
+				8BACE89F279962E400BE317E /* Models */,
+				8BACE89E279962D600BE317E /* Views */,
+				8BACE89D2799624900BE317E /* ViewModels */,
+			);
+			path = MainProduct;
+			sourceTree = "<group>";
+		};
+		8BACE89D2799624900BE317E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8BACE89E279962D600BE317E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8BACE8892799585F00BE317E /* Main.storyboard */,
+				8BACE86F2799578500BE317E /* MainController.swift */,
 				8BACE8772799578500BE317E /* DetailController.swift */,
 			);
-			path = DetailController;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8BACE89F279962E400BE317E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8BACE8722799578500BE317E /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8BACE8A02799632800BE317E /* ShoppingBasket */ = {
+			isa = PBXGroup;
+			children = (
+				8BACE8A32799633C00BE317E /* Models */,
+				8BACE8A22799633600BE317E /* Views */,
+				8BACE8A12799632F00BE317E /* ViewModels */,
+			);
+			path = ShoppingBasket;
+			sourceTree = "<group>";
+		};
+		8BACE8A12799632F00BE317E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8BACE8A22799633600BE317E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8BACE8A32799633C00BE317E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8BACE8712799578500BE317E /* ShoppingBasket.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8BACE8A52799637E00BE317E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8BACE8A9279963F800BE317E /* NetwrokLayer */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		8BACE8A7279963A400BE317E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8BACE8AD279964BB00BE317E /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8BACE8A9279963F800BE317E /* NetwrokLayer */ = {
+			isa = PBXGroup;
+			children = (
+				8BACE86B2799578400BE317E /* NetworkServiceMock.swift */,
+				8BACE86C2799578400BE317E /* DemoData.swift */,
+			);
+			path = NetwrokLayer;
+			sourceTree = "<group>";
+		};
+		8BACE8AC279964AE00BE317E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8BACE8AE279964C500BE317E /* Constants */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8BACE8AD279964BB00BE317E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8BACE8AE279964C500BE317E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +278,6 @@
 				8BACE88D2799586000BE317E /* Main.storyboard in Resources */,
 				8BACE88E2799586000BE317E /* LaunchScreen.storyboard in Resources */,
 				8BACE8922799593200BE317E /* Assets.xcassets in Resources */,
-				8B0D4DF4279956E6002D8B22 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +291,6 @@
 				8BACE87A2799578500BE317E /* NetworkServiceMock.swift in Sources */,
 				8BACE87F2799578500BE317E /* Product.swift in Sources */,
 				8BACE8822799578500BE317E /* DetailController.swift in Sources */,
-				8B0D4DEF279956E3002D8B22 /* ViewController.swift in Sources */,
 				8BACE8802799578500BE317E /* AppDelegate.swift in Sources */,
 				8BACE8812799578500BE317E /* SceneDelegate.swift in Sources */,
 				8BACE87E2799578500BE317E /* ShoppingBasket.swift in Sources */,
