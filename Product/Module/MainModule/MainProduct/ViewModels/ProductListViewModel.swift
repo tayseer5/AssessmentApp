@@ -63,6 +63,16 @@ extension ProductListViewModel{
 //            self.viewBindDelegate?.pushToView(viewController: moviewDetailsViewController ?? UIViewController())
 //        }
     }
+    func moveToChart (){
+        guard let basketView = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "BasketView") as? BasketView else {
+            return
+        }
+        self.viewBindDelegate?.pushToView(viewController: basketView)
+    }
+    func clearToChart () {
+        WARealmManager.shared.deleteAllDataBase()
+        
+    }
     func reloadData () {
         self.getProductListApi()
     }

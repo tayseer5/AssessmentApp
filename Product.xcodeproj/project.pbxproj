@@ -3,10 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B3D93012799D39D006D2E69 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 8B3D93002799D39D006D2E69 /* Realm */; };
+		8B3D93032799D39D006D2E69 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8B3D93022799D39D006D2E69 /* RealmSwift */; };
+		8B3D93062799D645006D2E69 /* WARealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D93052799D645006D2E69 /* WARealmManager.swift */; };
+		8B3D930C2799F0F6006D2E69 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8B3D930B2799F0F6006D2E69 /* Kingfisher */; };
+		8B3D93142799F92D006D2E69 /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D93132799F92D006D2E69 /* BasketView.swift */; };
+		8B3D93182799FA06006D2E69 /* BasketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D93162799FA06006D2E69 /* BasketTableViewCell.swift */; };
+		8B3D93192799FA06006D2E69 /* BasketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3D93172799FA06006D2E69 /* BasketTableViewCell.xib */; };
+		8B3D931D2799FB14006D2E69 /* BasketCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D931C2799FB14006D2E69 /* BasketCellViewModel.swift */; };
+		8B3D93222799FBE6006D2E69 /* BasketListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D93212799FBE6006D2E69 /* BasketListViewModel.swift */; };
 		8BACE87A2799578500BE317E /* NetworkServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BACE86B2799578400BE317E /* NetworkServiceLayer.swift */; };
 		8BACE87B2799578500BE317E /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BACE86C2799578400BE317E /* DemoData.swift */; };
 		8BACE87D2799578500BE317E /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BACE86F2799578500BE317E /* ProductListViewController.swift */; };
@@ -20,7 +29,6 @@
 		8BACE8BF27996E3600BE317E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BACE8BE27996E3600BE317E /* Constants.swift */; };
 		8BACE8C82799728A00BE317E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BACE88A2799585F00BE317E /* Main.storyboard */; };
 		8BACE8C92799728A00BE317E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BACE88C2799586000BE317E /* LaunchScreen.storyboard */; };
-		8BACE8D027998DE700BE317E /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BACE8CF27998DE700BE317E /* NetworkResponse.swift */; };
 		8BACE8D52799A14200BE317E /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BACE8D42799A14200BE317E /* ProductListViewModel.swift */; };
 		8BACE8DB2799A89D00BE317E /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BACE8D92799A89D00BE317E /* ProductTableViewCell.swift */; };
 		8BACE8DC2799A89D00BE317E /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BACE8DA2799A89D00BE317E /* ProductTableViewCell.xib */; };
@@ -30,6 +38,12 @@
 /* Begin PBXFileReference section */
 		8B0D4DE7279956E3002D8B22 /* Product.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Product.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0D4DF8279956E6002D8B22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B3D93052799D645006D2E69 /* WARealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WARealmManager.swift; sourceTree = "<group>"; };
+		8B3D93132799F92D006D2E69 /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketView.swift; sourceTree = "<group>"; };
+		8B3D93162799FA06006D2E69 /* BasketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewCell.swift; sourceTree = "<group>"; };
+		8B3D93172799FA06006D2E69 /* BasketTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasketTableViewCell.xib; sourceTree = "<group>"; };
+		8B3D931C2799FB14006D2E69 /* BasketCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketCellViewModel.swift; sourceTree = "<group>"; };
+		8B3D93212799FBE6006D2E69 /* BasketListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketListViewModel.swift; sourceTree = "<group>"; };
 		8BACE86B2799578400BE317E /* NetworkServiceLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceLayer.swift; sourceTree = "<group>"; };
 		8BACE86C2799578400BE317E /* DemoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
 		8BACE86F2799578500BE317E /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
@@ -43,7 +57,6 @@
 		8BACE8912799593200BE317E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BACE8B827996D5800BE317E /* RouterCreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterCreation.swift; sourceTree = "<group>"; };
 		8BACE8BE27996E3600BE317E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		8BACE8CF27998DE700BE317E /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 		8BACE8D42799A14200BE317E /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
 		8BACE8D92799A89D00BE317E /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		8BACE8DA2799A89D00BE317E /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
@@ -55,6 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B3D930C2799F0F6006D2E69 /* Kingfisher in Frameworks */,
+				8B3D93032799D39D006D2E69 /* RealmSwift in Frameworks */,
+				8B3D93012799D39D006D2E69 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +108,26 @@
 			path = Product;
 			sourceTree = "<group>";
 		};
+		8B3D93122799F8A4006D2E69 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				8BACE88A2799585F00BE317E /* Main.storyboard */,
+				8BACE89C2799623200BE317E /* MainProduct */,
+				8BACE8A02799632800BE317E /* ShoppingBasket */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		8B3D931B2799FA0D006D2E69 /* CustomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				8B3D93162799FA06006D2E69 /* BasketTableViewCell.swift */,
+				8B3D93172799FA06006D2E69 /* BasketTableViewCell.xib */,
+				8B3D931C2799FB14006D2E69 /* BasketCellViewModel.swift */,
+			);
+			path = CustomeCell;
+			sourceTree = "<group>";
+		};
 		8BACE8732799578500BE317E /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,8 +140,7 @@
 		8BACE89B2799620700BE317E /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				8BACE8A02799632800BE317E /* ShoppingBasket */,
-				8BACE89C2799623200BE317E /* MainProduct */,
+				8B3D93122799F8A4006D2E69 /* MainModule */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -132,7 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				8BACE8D82799A86400BE317E /* CustomeCell */,
-				8BACE88A2799585F00BE317E /* Main.storyboard */,
 				8BACE86F2799578500BE317E /* ProductListViewController.swift */,
 				8BACE8772799578500BE317E /* DetailController.swift */,
 			);
@@ -160,6 +194,7 @@
 		8BACE8A12799632F00BE317E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				8B3D93212799FBE6006D2E69 /* BasketListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -167,6 +202,8 @@
 		8BACE8A22799633600BE317E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8B3D931B2799FA0D006D2E69 /* CustomeCell */,
+				8B3D93132799F92D006D2E69 /* BasketView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				8BACE8A9279963F800BE317E /* NetwrokLayer */,
+				8B3D93052799D645006D2E69 /* WARealmManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -201,7 +239,6 @@
 				8BACE86B2799578400BE317E /* NetworkServiceLayer.swift */,
 				8BACE86C2799578400BE317E /* DemoData.swift */,
 				8BACE8B827996D5800BE317E /* RouterCreation.swift */,
-				8BACE8CF27998DE700BE317E /* NetworkResponse.swift */,
 			);
 			path = NetwrokLayer;
 			sourceTree = "<group>";
@@ -263,6 +300,11 @@
 			dependencies = (
 			);
 			name = Product;
+			packageProductDependencies = (
+				8B3D93002799D39D006D2E69 /* Realm */,
+				8B3D93022799D39D006D2E69 /* RealmSwift */,
+				8B3D930B2799F0F6006D2E69 /* Kingfisher */,
+			);
 			productName = Product;
 			productReference = 8B0D4DE7279956E3002D8B22 /* Product.app */;
 			productType = "com.apple.product-type.application";
@@ -290,6 +332,10 @@
 				Base,
 			);
 			mainGroup = 8B0D4DDE279956E3002D8B22;
+			packageReferences = (
+				8B3D92FF2799D39D006D2E69 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				8B3D930A2799F0F6006D2E69 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 8B0D4DE8279956E3002D8B22 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -308,6 +354,7 @@
 				8BACE8DC2799A89D00BE317E /* ProductTableViewCell.xib in Resources */,
 				8BACE8C92799728A00BE317E /* LaunchScreen.storyboard in Resources */,
 				8BACE8922799593200BE317E /* Assets.xcassets in Resources */,
+				8B3D93192799FA06006D2E69 /* BasketTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,18 +365,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B3D93142799F92D006D2E69 /* BasketView.swift in Sources */,
+				8B3D931D2799FB14006D2E69 /* BasketCellViewModel.swift in Sources */,
+				8B3D93182799FA06006D2E69 /* BasketTableViewCell.swift in Sources */,
 				8BACE87A2799578500BE317E /* NetworkServiceLayer.swift in Sources */,
+				8B3D93222799FBE6006D2E69 /* BasketListViewModel.swift in Sources */,
 				8BACE8BF27996E3600BE317E /* Constants.swift in Sources */,
 				8BACE8DF2799A8B900BE317E /* ProductCellViewModel.swift in Sources */,
 				8BACE8D52799A14200BE317E /* ProductListViewModel.swift in Sources */,
 				8BACE8B927996D5800BE317E /* RouterCreation.swift in Sources */,
 				8BACE87F2799578500BE317E /* Product.swift in Sources */,
 				8BACE8822799578500BE317E /* DetailController.swift in Sources */,
+				8B3D93062799D645006D2E69 /* WARealmManager.swift in Sources */,
 				8BACE8802799578500BE317E /* AppDelegate.swift in Sources */,
 				8BACE8DB2799A89D00BE317E /* ProductTableViewCell.swift in Sources */,
 				8BACE8812799578500BE317E /* SceneDelegate.swift in Sources */,
 				8BACE87E2799578500BE317E /* ShoppingBasket.swift in Sources */,
-				8BACE8D027998DE700BE317E /* NetworkResponse.swift in Sources */,
 				8BACE87D2799578500BE317E /* ProductListViewController.swift in Sources */,
 				8BACE87B2799578500BE317E /* DemoData.swift in Sources */,
 			);
@@ -514,6 +565,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8B3D92FF2799D39D006D2E69 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.21.1;
+			};
+		};
+		8B3D930A2799F0F6006D2E69 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8B3D93002799D39D006D2E69 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B3D92FF2799D39D006D2E69 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		8B3D93022799D39D006D2E69 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B3D92FF2799D39D006D2E69 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		8B3D930B2799F0F6006D2E69 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B3D930A2799F0F6006D2E69 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8B0D4DDF279956E3002D8B22 /* Project object */;
 }

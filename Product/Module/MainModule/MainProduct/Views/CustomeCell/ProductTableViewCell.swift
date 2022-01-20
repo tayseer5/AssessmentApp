@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Kingfisher
 import UIKit
 
 class ProductTableViewCell: UITableViewCell {
@@ -18,16 +19,18 @@ class ProductTableViewCell: UITableViewCell {
     }
     func bindData(_ productCellViewModel: ProductCellViewModel) {
         self.productCellViewModel = productCellViewModel
-        //ImageLoader().loadImage(with: productCellViewModel.movie.poster_path, image: movieImageView)
-        movieName.text = productCellViewModel.product.name 
-       // let imageName = productCellViewModel.product.isFavourite ? "heart.fill" :"heart"
-        //favouriteButton.setBackgroundImage( UIImage(systemName: imageName), for: UIControl.State.normal)
+        let url = URL(string: productCellViewModel.product.imageUrl)
+        movieImageView.kf.setImage(
+            with: url,
+            placeholder: UIImage(systemName: "timelapse"),
+            options: [
+                .transition(.fade(1)),
+                .cacheOriginalImage
+            ])
+        movieName.text = productCellViewModel.product.name
     }
     @IBAction func addToChart(_ sender: Any) {
-        //let imageName = productCellViewModel?.changeFavouriteState() ?? false ? "heart.fill" :"heart"
-        
-        //favouriteButton.setBackgroundImage( UIImage(systemName: imageName), for: UIControl.State.normal)
-        
+        productCellViewModel?.addToChart()
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
